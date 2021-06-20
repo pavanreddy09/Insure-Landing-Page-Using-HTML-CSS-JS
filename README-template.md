@@ -23,7 +23,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: (https://github.com/pavanreddy09/Responsive-Profile-Card-Component-Webpage-Using-HTML-CSS-CSS-Flexbox)
-- Live Site URL:(https://pavanreddy09.github.io/Responsive-Profile-Card-Component-Webpage-Using-HTML-CSS-CSS-Flexbox/)
+- Live Site URL:(https://pavanreddy09.github.io/Insure-Landing-Page-Using-HTML-CSS-JS/)
 
 ### Built with
 
