@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  p, h4 {
+    font-family: 'Karla', sans-serif;
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+  }
+  nav {
+    padding: 3rem 3rem 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+ nav ul {
+   width: 30%;
+   display: flex;
+   justify-content: space-between;
+   font-size: 1.1rem;
+ }
+ nav ul li {
+    list-style: none;
+ }
+ nav ul li:last-child {
+   border: 2px solid black;
+   transform: translateY(-8px);
+   padding: 7px;
+ }
+ nav ul li:last-child a {
+   color: black;
+ }
+ nav ul li a{
+   text-decoration: none;
+   color:  hsl(273, 4%, 51%);
+   font-family: 'Karla', sans-serif;
+ }
+ .container {
+   position: relative;
+   overflow: hidden;
+ }
+ .container-top {
+   padding: 5rem;
+   min-height: 300px;
+   display: flex;
+   justify-content: space-between;
+   background-color: hsl(270, 9%, 17%);
+   overflow: hidden;
+ }
+ 
+ .container-top-text {
+    color: white;
+   line-height: 2rem;
+   padding: 2rem;
+   width: 40%;
+   z-index: 50;
+ }
+ .container-top-text h1 {
+   line-height: 2.5rem;
+   margin: 2rem 0 2rem 0;
+   font-size: 3rem;
+   letter-spacing: 0.2rem;
+ }
+ .container-top-text p {
+   padding-bottom: 2rem;
+ }
+ .container-top-text button {
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  width: 100px;
+  padding: 7px;
+
+ }
+ .container-top-img {
+   position: absolute;
+   right: 200px;
+   height: 600px;
+   width: 500px;
+ }
+ .container-top-img img {
+   height: 100%;
+   width: 100%;
+ }
+
+ hr {
+   width: 100px;
+ }
+ .container-bottom {
+   height: 300px;
+   padding-left: 7rem;
+   padding-bottom: 1rem;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+ }
+ .img-pattern-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-80px);
+ }
+ .img-pattern-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-15px) translateY(30px);
+ }
+ .section {
+   overflow: hidden;
+   padding: 1rem 5rem 0 7rem;
+ }
+ .section-content {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 3rem;
+ }
+ .details {
+   width: 550px;
+   line-height: 1.5rem;
+ }
+ .details img{
+  margin-bottom: 2rem;
+ }
+ .details p {
+   margin-top: 1rem;
+   line-height: 1.6rem;
+   color: hsl(216, 30%, 68%);
+ }
+ .how-we-work {
+   background-color: hsl(270, 9%, 17%);
+   margin: 6rem;
+   padding: 3rem;
+   min-height: 140px;
+   color: white;
+   position: relative;
+   overflow: hidden;
+   z-index: -1;
+ }
+ .more {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 1.5rem;
+ }
+ .how-we-work h1 {
+   font-size: 2.5rem;
+ }
+ .how-we-work button {
+   cursor: pointer;
+   border: 2px solid white;
+   background-color: transparent;
+   padding: 8px 15px 8px 15px;
+   font-size: 1.3rem;
+   color: white;
+   margin-right: 2rem;
+ }
+ .how-we-work img {
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ .contacts {
+   display: flex;
+   justify-content: space-between;
+   margin: 5rem 5rem 1.5rem 5rem;
+ }
+ .icons img{
+   cursor: pointer;
+   margin-left: 1rem;
+ }
+ .line {
+   margin-left: 5rem;
+   width: 88%;
+ }
+
+ footer {
+   width: 70%;
+   display: flex;
+   justify-content: space-between;
+   margin: 2rem 5rem 2rem 7rem;
+   text-transform: uppercase;
+ }
+ footer h4 {
+   margin-bottom: 1.7rem;
+   color:  hsl(273, 4%, 51%);
+ }
+ footer p {
+   line-height: 1.5rem;
+   font-weight: bold;
+ }
+ footer p a {
+   text-decoration: none;
+   color: hsl(270, 9%, 17%);
+ }
+ #icon-hamburger {
+   display: none;
+ }
+
+
+
+ /* Mobile view */
+ @media (max-width:600px) {
+   nav ul {
+    flex-direction: column;
+    height: 0;
+    width: auto;
+    overflow: hidden;
+   }
+   header {
+     position: relative;
+     z-index: 10;
+   }
+   nav {
+        width: auto; 
+        z-index: 100;
+    }
+    nav .active  {
+     z-index: 10;
+     height: auto;
+     width: auto;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 105px;
+     text-align: center;
+     background-color: hsl(256, 26%, 20%);
+     padding: 3rem 1rem 1rem 1rem;
+     line-height: 2.5rem;
+     transition: 0.5s;
+      }
+      nav ul li a {
+        color: white;
+      }
+      nav ul li {
+        margin: 1rem;
+      }
+      nav ul li:last-child {
+        border: 2px solid white;
+     }
+     nav ul li:last-child a {
+       color: white;
+     }
+  
+   #icon-hamburger {
+     display: block;
+     margin-left: auto;
+     cursor: pointer;
+   }
+   .container-top  {
+     flex-direction: column-reverse;
+     padding: 0;
+   }
+   .container-top-img {
+     position: relative;
+     width: auto;
+     right: 0;
+     z-index: 1;
+   }
+   .container-top-text {
+     width: auto;
+     text-align: center;
+   }
+   hr {
+     width: auto;
+   }
+   .container-bottom {
+     padding-left: 90px;
+     width: 60%;
+   }
+   .img-pattern-right {
+     top: 800px; 
+      transform: rotate(20deg) translateX(230px);
+ }
+   .img-pattern-left {
+       bottom: 450px;
+ }
+   .section {
+     padding: 0;
+     text-align: center;
+   }
+   .section-content {
+     flex-direction: column;
+   }
+   .details {
+     width: auto;
+     text-align: center;
+   }
+   .how-we-work {
+     margin: 2rem;
+     height: 300px;
+   }
+   .more {
+     flex-direction: column;
+     text-align: center;
+   }
+   .how-we-work h1 {
+     font-size: 2.5rem;
+   }
+   .how-we-work button {
+     margin-top: 4rem;
+   }
+   .how-we-work img {
+   right: -200px;
+   bottom:0;
+   }
+   .contacts {
+     flex-direction: column;
+     align-items: center;
+     margin: 4rem;
+   }
+   .icons {
+     margin-top: 2rem;
+   }
+   .line {
+   margin-left: 2rem;
+   width: 88%;
+ }
+ footer {
+   width: auto;
+   flex-direction: column;
+   text-align: center;
+   margin: 0;
+   margin-bottom: 2rem;
+ } 
+ footer h4 {
+   margin-top: 2rem;
+ }
+
+ }
